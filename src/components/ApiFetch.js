@@ -25,16 +25,7 @@ const ApiFetch = () => {
         getUsersFetch();
     }, [])
 
-if(errs !== true){
-    return (
-        <>
-            <div className='errores'>
-                {errs}
-            </div>
-        </>
-    )
-}
-    else if(loading === true) {
+    if (loading === true) {
         return (
             <>
                 <div>
@@ -45,7 +36,7 @@ if(errs !== true){
             </>
         )
 
-    } else if(loading===false && errs===""){
+    } else {
         return (
             <>
                 <div>
